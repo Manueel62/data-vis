@@ -1,0 +1,20 @@
+Block tags: They take whole width
+Inline tags: Do not, can many same line
+
+Page disposition: All block tags
+	headers 
+	articles [Contains sections]
+	aside --> Section right-hand side article
+	footer --> Close page
+
+	General: 
+	div --> division, general block (whole width), block
+	nav --> Contains elements for navigation (usually below header)
+	a --> link, inline 
+	span --> Define specific text inside div block, inline 
+	figure --> can contain img and caption, block 
+		contains:
+		object (used if want add .svg) / img
+		figcaption 
+	img --> inline, (src, alt [alternative text if not loaded properly], width, size)
+	html --> structure has to be contained in it
