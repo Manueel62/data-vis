@@ -15,24 +15,30 @@
 		<meta name="msapplication-navbutton-color" content="black"> <!-- Windows Phone -->
 		<meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- iOS Safari -->
 		<!-- Link style (CSS) -->
-		<link type="text/css" rel="stylesheet" href="../assets/style/style.css">
+<!--		<link type="text/css" rel="stylesheet" href="../assets/style/style.css">-->
+		<link rel="stylesheet" href="assets/style/style.css">
 	</head>
 	<body>
 	<!-- Contains visualized info -->
-		<h1>Data visualization course</h1>
-		<p>
+		<h1 class="menu">Data visualization course</h1>
+		<div class="menu">
+			<p>
 			SUPSI<br>
 			Bachelor in Data Science and Artificial Intelligence<br/>
-			Teacher: Giovanni Profeta<br/>
+			Lecturer: Giovanni Profeta<br/>
 			Academic year: 2022-2023<br/>
-			<a class="link" href="https://github.com/dataviz-supsi/2022">code</a>
-		</p>
+			</p>
+			<form action="https://github.com/dataviz-supsi/2022">
+         		<button type="submit">Get to GitHub page</button>
+      		</form>
+		</div>
 		<hr>
 
-		<ul>
-			<li><a href="">
-				<span class="author">Authors</span><span>Project name</span>
-			</a></li>
-		</ul>
+		<div class="author">
+			<p> 	Stefano Billeter <br>
+					Manuel Acquistapace <br>
+					Miro Rava</p>
+			<p>Flights delays & cancellations</p>
+		</div>
 	</body>
 </html>

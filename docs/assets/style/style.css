@@ -1,44 +1,3 @@
-/* 
-Specify element{
-	set visual rules
-} 
-background-color
-color
-
-element is linked using:
-	generic kind of tag ex [img]
-	specific class of elements [.classname]
-	.images {
-		...
-	}
-	specific element [#idname]
-	#topbar {
-		...
-	}
-	
-
-if specified both generic img and class .images, priority given to class style
-Priority(from more to less):
-	id
-	class
-	generic
-
-
-display: can merge inline and block behavior
-flex: by def inline elements, even if they are block, around concept FlexBox
-	  something can happen in them 
-	  can be dinamicallly distributed
-
-justify-content
-how elements close from each other
-flex-start: All elements start
-flex-end: at the end
-space-between: gap between elements
-space-around: gap around elements uniformly distibuted
-
-All possible values canbe seen using the inspector (nothing will happen html and css files, preview) 
-*/
-
 html {
 	box-sizing: border-box;
 }
@@ -52,6 +11,11 @@ body {
 	font-family: "Times New Roman", Serif;
 }
 /* ---- overal layout  -----*/
+.menu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 .link {
 	margin-left: -1.25em;
@@ -177,15 +141,11 @@ a{
 a:hover{
 	text-decoration: underline;
 }
-ul{
-	margin:0;
-	padding: 0;
-	list-style: none;
-}
 .author {
-	width: 200px;
-	display: inline-block;
+	display: flex;
+	justify-content: space-evenly;
 }
+
 #abstract{
 	font-size: 1.7rem;
 	margin-bottom: 2rem;
@@ -199,15 +159,14 @@ figcaption{
 
 /* ---- tablet version -----*/
 
+
+
 @media only screen and (max-width: 768px) {
 	h1 {
 		font-size: 1.9rem;
 	}
 	h2, #abstract {
 		font-size: 1.5rem;
-	}
-	.author {
-		display: block;
 	}
 	li {
 		margin-bottom: 1em;
