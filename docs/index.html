@@ -1,184 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Dorang landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Air Travel Data</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-
-    <!-- Bootstrap + Dorang main styles -->
-	<link rel="stylesheet" href="assets/css/dorang.css">
+  <meta charset="UTF-8">
+  <title>CodePen - Full Screen Portfolio Carousel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
-    
-    <!-- page navbar -->
-    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
-        <ul class="nav-navbar container">
-            <li class="nav-item"><a href="" class="nav-link">Data Visualization Course</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Explore</a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><img src="assets/imgs/placeholder.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page"></a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Maps</a></li>
-            <li class="nav-item search">
-                <a href="javascript:void(0)" class="nav-link search-toggle"><i class="ti-search"></i> Search</a>
-                <div class="search-wrapper">
-                    <form>
-                        <input type="search" class="form-control" name="" placeholder="hit enter to search">
-                    </form>
-                </div>
-            </li>
-        </ul>
-    </nav><!-- end of page navbar -->
+<body>
+<!-- partial:index.partial.html -->
+<nav data-toggled="false" data-transitionable="false">
+  <div id="nav-logo-section" class="nav-section">
+    <a href="#">
+      <i class="fa-solid fa-dumpster-fire"></i>
+    </a>
+  </div>
+  <div id="nav-mobile-section">
+    <div id="nav-link-section" class="nav-section">
+      <a href="#">ABOUT</a>
+      <a href="#">WORK</a>
+    </div>
+    <div id="nav-social-section" class="nav-section">
+      <a href="#">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://www.youtube.com/c/Hyperplexed" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+      </a>    
+      <a href="#">
+        <i class="fa-brands fa-codepen"></i>
+      </a>
+    </div>
+    <div id="nav-contact-section" class="nav-section">
+      <a href="#">GET IN TOUCH</a>
+    </div>
+  </div>
+  <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+    <span>Menu</span>
+    <i class="fa-solid fa-bars"></i>
+  </button>
+</nav>
 
-    <div class="theme-selector">
-        <a href="javascript:void(0)" class="spinner">
-            <i class="ti-paint-bucket"></i>
-        </a>
-        <div class="body">
-            <a href="javascript:void(0)" class="light"></a>
-            <a href="javascript:void(0)" class="dark"></a>
-        </div>
-    </div>  
-
-    <!-- page header -->
-    <header class="header">
-        <div class="overlay"></div>
-        <div class="header-content">
-            <h1 class="header-title">Air Travel Statistics Are Our Future!</h1>
-            <p class="header-subtitle">Discover the world of Air Travel with the power of Data Visualization.</p>
-
-            <button class="btn btn-theme-color modal-toggle"><i class="ti-control-play text-danger"></i> Watch Video</button>
-        </div>
-    </header><!-- end of page header -->
-
-    <!-- modal -->
-    <div class="modalBox">
-        <div class="modalBox-body">
-            <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-        </div>          
-    </div><!-- end of modal -->
-
-    <!-- page container -->
-    <div class="container page-container">
-        <div class="col-md-10 col-lg-8 m-auto">
-            <h6 class="title mb-4">Explore The World of Data</h6>
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-        </div>  
-        <!--- <div class="flourish-embed flourish-map" data-src="visualisation/11995515" data-width="100%" ><script src="https://public.flourish.studio/resources/embed.js"></script></div> -->
-        <iframe allow="fullscreen" src='https://flo.uri.sh/visualisation/11995515/embed' title='Interactive or visual content' class='flourish-embed-iframe' style='width:100%;height:800px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
-        <iframe width="100%" height="800" src="https://flowmap.blue/1J5Bl7YuviuNLWQtyOQu5954GtZ2OwsiOj7a1jsycCTQ/embed" allowfullscreen></iframe>
-        <!-- row -->
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <a href="javascript:void(0)" class="overlay-img">
-                    <img src="assets/imgs/img-1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page">  
-                    <div class="overlay"></div> 
-                    <div class="des">
-                        <h1 class="title">Excepteur sint</h1>
-                        <h6 class="subtitle">magna aliqua</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>          
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="javascript:void(0)" class="overlay-img">
-                    <img src="assets/imgs/img-2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page">  
-                    <div class="overlay"></div> 
-                    <div class="des">
-                        <h1 class="title">Nostrud exercitation </h1>
-                        <h6 class="subtitle">nulla pariatur</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>          
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="javascript:void(0)" class="overlay-img">
-                    <img src="assets/imgs/img-3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page">  
-                    <div class="overlay"></div> 
-                    <div class="des">
-                        <h1 class="title">Excepteur sint</h1>
-                        <h6 class="subtitle">magna aliqua</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>          
-                </a>
-            </div>          
-        </div><!-- end of row -->
-
-        <a href="#">Load More <i class="ti-angle-double-right angle"></i></a>
-
-
-        <div class="col-md-10 col-lg-8 m-auto">
-            <h6 class="title mb-4 mt-5 pt-5">The Journal</h6>
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p>
-        </div>
-
-        <!-- row -->
-        <div class="row mb-5">
-            <div class="col-md-6">
-                <a href="javascript:void(0)" class="card">
-                    <img src="assets/imgs/blog-1.jpg" class="card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page">
-                    <div class="card-body">
-                        <h6 class="card-subtitle">30 June, 2018</h6>
-                        <h3 class="card-title">Eiusmod
-                        tempor</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>                  
-                </a>
-            </div>  
-            <div class="col-md-6">
-                <a href="javascript:void(0)" class="card">
-                    <img src="assets/imgs/blog-2.jpg" class="card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page">
-                    <div class="card-body">
-                        <h6 class="card-subtitle">29 June, 2018</h6>
-                        <h3 class="card-title">Ut minim veniam</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>                  
-                </a>
-            </div>  
-        </div><!-- end of row -->
-
-        <a href="#">All Posts <i class="ti-angle-double-right angle"></i></a>
-
-    </div> <!-- end of page container -->
-
-    <!--footer & pre footer -->
-    <div class="contact-section">
-            <footer class="footer">
-                <p class="infos">&copy; <script>document.write(new Date().getFullYear())</script>, Made with <i class="ti-heart text-danger"></i> by <a href="http://www.devcrud.com">DevCRUD</a></p>       
-                <span>|</span>  
-                <div class="links">
-                    <a href="#">About</a>
-                    <a href="#">Explore</a>
-                    <a href="#">Journal</a>
-                </div>
-            </footer><!-- end of footer -->
-
-        </div><!-- end of container -->
-    </div><!-- end of pre footer -->
-
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Dorang js -->
-    <script src="assets/js/dorang.js"></script>
+<main>
+  <article data-index="0" data-status="active">
+    <div><iframe width="100%" height="100%" src="https://flowmap.blue/1J5Bl7YuviuNLWQtyOQu5954GtZ2OwsiOj7a1jsycCTQ/embed" allowfullscreen></iframe></div>
+    <div class="article-description-section article-section">
+      <p>
+        This is a recreation (from scratch) of <a class="source-link" href="https://www.dylanbrouwer.design/work" target="_blank">dylanbrouwer.design/work</a>. See how I did it <a class="yt-link" href="https://youtu.be/nG2IyH43xMU" target="_blank"><i class="fa-brands fa-youtube"></i></a>.
+      </p>
+    </div>
+    <div class="article-title-section article-section">
+      <h2>Recreation From Scratch</h2>
+      <i class="fa-light fa-plus-large"></i>
+    </div>
+    <div class="article-nav-section article-section">
+      <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+        <i class="fa-light fa-arrow-left-long"></i>
+      </button>
+      <button class="article-nav-button" type="button" onclick="handleRightClick()">
+        <i class="fa-light fa-arrow-right-long"></i>
+      </button>
+    </div>
+  </article>
+  <article data-index="1" data-status="inactive">    
+    <div class="article-image-section article-section"></div>
+    <div class="article-description-section article-section">
+      <p>A place where books hang out waiting to be grabbed. But don't be too grabby now, ya hear.</p>
+    </div>
+    <div class="article-title-section article-section">
+        <h2>Wicked Cool Library Shelves</h2>
+      <i class="fa-light fa-plus-large"></i>
+    </div>
+    <div class="article-nav-section article-section">
+      <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+        <i class="fa-light fa-arrow-left-long"></i>
+      </button>
+      <button class="article-nav-button" type="button" onclick="handleRightClick()">
+        <i class="fa-light fa-arrow-right-long"></i>
+      </button>
+    </div>
+  </article>
+  <article data-index="2" data-status="inactive">    
+    <div class="article-image-section article-section"></div>
+    <div class="article-description-section article-section">
+      <p>The neatest lighthouse you ever saw. Ehh, actually it's kind of messy. But that's why the pic is of the outside.</p>
+    </div>
+    <div class="article-title-section article-section">
+      <h2>Neato Toledo Lighthouse</h2>
+      <i class="fa-light fa-plus-large"></i>
+    </div>
+    <div class="article-nav-section article-section">
+      <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+        <i class="fa-light fa-arrow-left-long"></i>
+      </button>
+      <button class="article-nav-button" type="button" onclick="handleRightClick()">
+        <i class="fa-light fa-arrow-right-long"></i>
+      </button>
+    </div>
+  </article>
+  <article data-index="3" data-status="inactive">    
+    <div class="article-image-section article-section"></div>
+    <div class="article-description-section article-section">
+      <p>
+        The blobiest of blobs nestled deep in the heart of outer space. Well, technically the universe is both infinite and homogeneous so there isn't really a heart, per se.
+      </p>
+    </div>
+    <div class="article-title-section article-section">
+      <h2>Super Space Blob</h2>
+      <i class="fa-light fa-plus-large"></i>
+    </div>
+    <div class="article-nav-section article-section">
+      <button class="article-nav-button" type="button" onclick="handleLeftClick()">
+        <i class="fa-light fa-arrow-left-long"></i>
+      </button>
+      <button class="article-nav-button" type="button" onclick="handleRightClick()">
+        <i class="fa-light fa-arrow-right-long"></i>
+      </button>
+    </div>
+  </article>
+</main>
+<!-- partial -->
+  <script src='https://kit.fontawesome.com/944eb371a4.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
