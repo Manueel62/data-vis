@@ -1,38 +1,10 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<!-- Title of the page, visualized on tab  -->
-		<title>Data visualization course | SUPSI</title>
-		<meta name="description"content="Data visualization course, SUPSI">
-		<meta name="author" content="Bachelor in Data Science and Artificial Intelligence">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- allow webpage to be run in full-screen mode -->
-		<meta name="mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<!-- set nav bar color -->
-		<meta name="theme-color" content="black"> <!-- Chrome, Firefox OS and Opera -->
-		<meta name="msapplication-navbutton-color" content="black"> <!-- Windows Phone -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- iOS Safari -->
-		<!-- Link style (CSS) -->
-		<link type="text/css" rel="stylesheet" href="../assets/style/style.css">
-	</head>
-	<body>
-	<!-- Contains visualized info -->
-		<h1>Data visualization course</h1>
-		<p>
-			SUPSI<br>
-			Bachelor in Data Science and Artificial Intelligence<br/>
-			Teacher: Giovanni Profeta<br/>
-			Academic year: 2022-2023<br/>
-			<a class="link" href="https://github.com/dataviz-supsi/2022">code</a>
-		</p>
-		<hr>
-
-		<ul>
-			<li><a href="docs/index.html">
-				<span class="author">Miro Rava, Manuel Acquistapace, Stefano Billeter</span><span>Air Travel data</span>
-			</a></li>
-		</ul>
-	</body>
+   <head>
+      <title>HTML Meta Tag</title>
+      <meta http-equiv = "refresh" content = '0; url = https://mr-productions.it/docs/' />
+   </head>
+   <body>
+      <p>Redirecting to another URL</p>
+   </body>
 </html>
