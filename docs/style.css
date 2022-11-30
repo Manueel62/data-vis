@@ -214,7 +214,7 @@ main > article > .article-title-section * {
 }
 
 main > article > .article-title-section > h2 {
-  flex-basis: 50%;
+  flex-basis: 100%;
   font-family: "Montserrat", sans-serif;
   font-size: 3.5rem;
   line-height: 3rem;
