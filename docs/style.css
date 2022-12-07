@@ -106,6 +106,59 @@ nav .nav-section {
 #nav-social-section {
   gap: 3rem;
 }
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 656px;
+  height: 656px;
+  background-color: #394670;
+  color: #fff;
+  text-align: -webkit-left;
+  border-radius: 6px;
+  padding: 8px 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  right: -20%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 91%;
+  margin-left: -5px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #394670 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
 
 main {
   flex-grow: 1;
@@ -150,6 +203,10 @@ main > article[data-status="becoming-active-from-before"] {
 main > article[data-status="becoming-active-from-after"] {
   transform: translateX(100%);
   transition: none;
+}
+
+#map1, #map2{
+  border: none
 }
 
 main > article > .article-section {

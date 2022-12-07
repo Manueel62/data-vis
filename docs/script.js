@@ -51,3 +51,14 @@ window.matchMedia("(max-width: 800px)").onchange = e => {
 
   nav.dataset.toggled = "false";
 };
+
+
+const myFunction1=()=> {
+  var popup = document.getElementById("myPopup1");
+    popup.classList.toggle("show")
+}
+
+const myFunction2=()=> {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show")
+}

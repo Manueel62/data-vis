@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
 
+
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -44,13 +45,17 @@
 
 <main>
   <article data-index="0" data-status="active">
-    <div><iframe width="100%" height="100%" src="https://flowmap.blue/1J5Bl7YuviuNLWQtyOQu5954GtZ2OwsiOj7a1jsycCTQ/embed" allowfullscreen></iframe></div>
+    <div><iframe id="map1" width="100%" height="100%" src="https://flowmap.blue/1J5Bl7YuviuNLWQtyOQu5954GtZ2OwsiOj7a1jsycCTQ/embed" allowfullscreen></iframe></div>
     <div class="article-description-section article-section">
       <p> Test words</p>
     </div>
     <div class="article-title-section article-section">
       <h2>Map1</h2>
-      <a href="#"> <i class="fa-light fa-plus-large"> </i> </a>
+      <a href="#">
+        <div class="popup" onclick="myFunction1()"><i class="fa-light fa-plus-large">Info</i>
+          <span class="popuptext" id="myPopup1"><iframe src="https://scribehow.com/embed/Flow_Map_Creation_from_Datasets__k8p1HFteR7G7gp0Q_gnhaw?removeLogo=true&skipIntro=true" width="640" height="640" allowfullscreen frameborder="0"></iframe></span>
+        </div>
+      </a>
     </div>
     <div class="article-nav-section article-section">
       <button class="article-nav-button" type="button" onclick="handleLeftClick()">
@@ -62,13 +67,17 @@
     </div>
   </article>
   <article data-index="1" data-status="inactive">    
-    <div> <iframe src='https://flo.uri.sh/visualisation/11995515/embed' title='Interactive or visual content' allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
+    <div> <iframe src='https://flo.uri.sh/visualisation/11995515/embed' title='Interactive or visual content' id="map2" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
     <div class="article-description-section article-section">
       <p>A place where books hang out waiting to be grabbed. But don't be too grabby now, ya hear.</p>
     </div>
     <div class="article-title-section article-section">
         <h2>Map2</h2>
-      <i class="fa-light fa-plus-large"></i>
+      <a href="#">
+        <div class="popup" onclick="myFunction2()"><i class="fa-light fa-plus-large">Info</i>
+          <span class="popuptext" id="myPopup2"></span>
+        </div>
+      </a>
     </div>
     <div class="article-nav-section article-section">
       <button class="article-nav-button" type="button" onclick="handleLeftClick()">
