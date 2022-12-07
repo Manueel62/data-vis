@@ -70,6 +70,7 @@ nav .nav-section {
   padding: 0rem 3rem;
   position: relative;
   z-index: 3;
+  font-size: 1.2rem;
 }
 
 #nav-toggle-button:hover,
@@ -87,6 +88,7 @@ nav .nav-section {
 #nav-social-section,
 #nav-contact-section {
   flex-grow: 1;
+  font-size: 1.2rem;
 }
 
 #nav-logo-section {
@@ -100,11 +102,13 @@ nav .nav-section {
 
 #nav-link-section {
   flex-basis: 50%;
-  gap: 6rem; 
+  gap: 6rem;
+  font-size: 1.2rem;
 }
 
 #nav-social-section {
   gap: 3rem;
+  font-size: 1.2rem;
 }
 /* Popup container */
 .popup {
