@@ -120,8 +120,8 @@ nav .nav-section {
 /* The actual popup (appears on top) */
 .popup .popuptext {
   visibility: hidden;
-  width: 656px;
-  height: 656px;
+  width: 716px;
+  height: 716px;
   background-color: #394670;
   color: #fff;
   text-align: -webkit-left;
