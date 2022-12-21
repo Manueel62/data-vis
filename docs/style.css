@@ -250,7 +250,7 @@ main > article > .article-image-section {
 }
 
 main > article > .article-description-section {
-  margin:1px, 1px;
+  margin:1px 1px;
   overflow-x: hidden;
   overflow-y: auto;
   text-align:justify;
@@ -363,6 +363,9 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     justify-content: center;
     order: 3;
     padding: 0.5rem;
+    overflow: visible;
+    justify-content: start;
+
   }
   main > article > .article-title-section > h2 {
     flex-basis: 100%;
@@ -446,7 +449,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
   }
   
   main > article {
-    grid-template-rows: 3fr repeat(3, 0.25fr);
+    grid-template-rows: 3fr 0.25fr 1fr 0.25fr;
     height: 100%;
   }
   
@@ -466,6 +469,8 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
   
   main > article > .article-description-section {
     padding: 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   
   main > article > .article-description-section > p {
