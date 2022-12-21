@@ -250,14 +250,18 @@ main > article > .article-image-section {
 }
 
 main > article > .article-description-section {
+  margin:1px, 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 4rem; 
+  justify-content: start;
+  padding: 2rem; 
 }
 
 main > article > .article-description-section > p {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 1.25em;
+  font-size: 1rem;
 }
 
 main > article > .article-description-section > p  > a:hover {
