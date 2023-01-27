@@ -213,7 +213,7 @@ main > article[data-status="becoming-active-from-after"] {
   transition: none;
 }
 
-#map1, #map2{
+#map1, #map2, #map3, #map4, #map5{
   border: none
 }
 
