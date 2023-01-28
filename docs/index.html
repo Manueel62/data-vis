@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -25,10 +25,18 @@
       </a>
     </div>
     <div id="nav-contact-section" class="nav-section">
-      <a href="contacts/index.html">CONTACTS</a>
+      <div class="popup_1"><a onclick="myFunction6()">CONTACTS</a>
+        <span class="popuptext" id="myPopup6"><a style="font-size: large ; color: rgba(255, 255, 255, 0.5)">Creators of the Project:<br><br>
+          <a style="font-size: medium ; color: rgba(255, 255, 255, 0.5)">Miro Rava:  </a> <a style="font-size: small ; color: rgba(255, 255, 255, 0.5)" href="mailto:miro.rava@student.supsi.ch">miro.rava@student.supsi.ch</a><br>
+          <a style="font-size: medium ; color: rgba(255, 255, 255, 0.5)">Manuel Acquistapace:  </a>  <a style="font-size: small ; color: rgba(255, 255, 255, 0.5)" href="mailto:manuel.acquistapace@student.supsi.ch">manuel.acquistapace@student.supsi.ch</a><br>
+          <a style="font-size: medium ; color: rgba(255, 255, 255, 0.5)">Stefano Billeter:  </a>  <a style="font-size: small ; color: rgba(255, 255, 255, 0.5)" href="mailto:stefano.billeter@student.supsi.ch">stefano.billeter@student.supsi.ch</a><br>
+        </a></span>
+      </div>
     </div>
     <div id="nav-info-section" class="nav-section">
-      <a href="about/index.html">PROTOCOL INFO</a>
+      <a id="protocol-toggle-button">
+        PROTOCOL INFO
+      </a>
     </div>
   </div>
   <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
@@ -39,7 +47,8 @@
 
 <main>
   <article data-index="0" data-status="active">
-    <div><iframe id="map1" width="100%" height="100%" src="https://flowmap.blue/1J5Bl7YuviuNLWQtyOQu5954GtZ2OwsiOj7a1jsycCTQ/embed?v=50.408823%2C-101.319676%2C2.42%2C0%2C0&a=1&as=1&b=1&bo=52&c=1&ca=1&cz=5&d=1&fe=1&lt=1&lfm=ALL&col=Plasma&f=51" allowfullscreen></iframe></div>
+    <div><div id="slider1"> <p>close</p>
+    </div><iframe id="map1" width="100%" height="100%" src="https://flowmap.blue/1J5Bl7YuviuNLWQtyOQu5954GtZ2OwsiOj7a1jsycCTQ/embed?v=50.408823%2C-101.319676%2C2.42%2C0%2C0&a=1&as=1&b=1&bo=52&c=1&ca=1&cz=5&d=1&fe=1&lt=1&lfm=ALL&col=Plasma&f=51" allowfullscreen></iframe></div>
     <div class="article-description-section article-section">
       <p>The visualization shown in the Flight Routes Map represents the amount of airline traffic with respect to each air route in the USA.<br><br><br>
         <a style="font-size: large ; color: rgba(255, 255, 255, 0.5)">Its features and visual variables are:</a><br><br>
@@ -67,7 +76,8 @@
     </div>
   </article>
   <article data-index="1" data-status="inactive">    
-    <div> <iframe src='https://flo.uri.sh/visualisation/11995515/embed' title='Interactive or visual content' id="map2" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
+    <div><div id="slider2"> <p>close</p>
+    </div><iframe src='https://flo.uri.sh/visualisation/11995515/embed' title='Interactive or visual content' id="map2" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
     <div class="article-description-section article-section">
       <p>The visualization shown in the Routes Delay Map represents the airline routes divided by airport as the first one, and their respective delay. <br><br><br>        <a style="font-size: large ; color: rgba(255, 255, 255, 0.5)">Its features and visual variables are:</a><br><br>
         Colour: the palette goes from green to red, where the first mean a low accrued delays on that route and the latter the opposite.<br><br>
@@ -93,7 +103,8 @@
     </div>
   </article>
   <article data-index="2" data-status="inactive">
-    <div> <iframe src='https://flo.uri.sh/visualisation/12570416/embed' title='Interactive or visual content' id="map3" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
+    <div><div id="slider3"> <p>close</p>
+    </div> <iframe src='https://flo.uri.sh/visualisation/12570416/embed' title='Interactive or visual content' id="map3" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
     <div class="article-description-section article-section">
       <p>The visualization shown in the Delay Insight Map represents the airline routes filtered by delay average.<br><br><br>
         <a style="font-size: large ; color: rgba(255, 255, 255, 0.5)">Its features and visual variables are:</a><br><br>
@@ -122,7 +133,8 @@
     </div>
   </article>
   <article data-index="3" data-status="inactive">
-    <div> <iframe src='https://flo.uri.sh/visualisation/12568654/embed' title='Interactive or visual content' id="map4" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
+    <div><div id="slider4"> <p>close</p>
+    </div> <iframe src='https://flo.uri.sh/visualisation/12568654/embed' title='Interactive or visual content' id="map4" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
     <div class="article-description-section article-section">
       <p>The visualization shown in the User Ratings Map represents the ratings given by users at a specific airport.<br><br><br>
         <a style="font-size: large ; color: rgba(255, 255, 255, 0.5)">Its features and visual variables are:</a><br><br>
@@ -151,7 +163,8 @@
     </div>
   </article>
   <article data-index="4" data-status="inactive">
-    <div> <iframe src='https://flo.uri.sh/visualisation/12571370/embed' title='Interactive or visual content' id="map5" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
+    <div><div id="slider5"> <p>close</p>
+    </div> <iframe src='https://flo.uri.sh/visualisation/12571370/embed' title='Interactive or visual content' id="map5" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
     <div class="article-description-section article-section">
       <p>The visualization shown in this Correlation Scatter Plot represents the ratings given by users at a specific airport and the respective Average Airport delay<br><br><br>
         <a style="font-size: large ; color: rgba(255, 255, 255, 0.5)">Its features and visual variables are:</a><br><br>

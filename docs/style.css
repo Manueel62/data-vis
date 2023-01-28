@@ -49,6 +49,76 @@ nav .nav-section {
   justify-content: center;
 }
 
+#slider1 {
+  flex-grow: 1;
+  position: absolute;
+  width: 75%;
+  height: calc(100% * (8/9));
+  bottom: 100%;
+  z-index: 1;
+  background: #060b19;
+  transition: bottom 1s;
+}
+#slider1.in {
+  bottom:calc(100% * (1/9));
+}
+
+#slider2 {
+  flex-grow: 1;
+  position: absolute;
+  width: 75%;
+  height: calc(100% * (8/9));
+  bottom: 100%;
+  z-index: 1;
+  background: #060b19;
+  transition: bottom 1s;
+}
+#slider2.in {
+  bottom:calc(100% * (1/9));
+}
+
+#slider3 {
+  flex-grow: 1;
+  position: absolute;
+  width: 75%;
+  height: calc(100% * (8/9));
+  bottom: 100%;
+  z-index: 1;
+  background: #060b19;
+  transition: bottom 1s;
+}
+#slider3.in {
+  bottom:calc(100% * (1/9));
+}
+
+#slider4 {
+  flex-grow: 1;
+  position: absolute;
+  width: 75%;
+  height: calc(100% * (8/9));
+  bottom: 100%;
+  z-index: 1;
+  background: #060b19;
+  transition: bottom 1s;
+}
+#slider4.in {
+  bottom:calc(100% * (1/9));
+}
+
+#slider5 {
+  flex-grow: 1;
+  position: absolute;
+  width: 75%;
+  height: calc(100% * (8/9));
+  bottom: 100%;
+  z-index: 1;
+  background: #060b19;
+  transition: bottom 1s;
+}
+#slider5.in {
+  bottom:calc(100% * (1/9));
+}
+
 #nav-mobile-section {
   display: flex;
   flex-basis: calc(100% * (2 / 3));
@@ -119,6 +189,55 @@ nav .nav-section {
 }
 
 /* Popup container */
+#nav-contact-section > .popup_1 {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+#nav-contact-section > .popup_1 > .popuptext {
+  visibility: hidden;
+  width: 446px;
+  height: 136px;
+  background-color: #394670;
+  color: #fff;
+  text-align: -webkit-left;
+  border-radius: 6px;
+  padding: 8px 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: -780%;
+  right: -100%;
+  margin-left: -80px;
+}
+
+#nav-contact-section > .popup_1 > .popuptext > iframe{
+  width: 430px;
+  height: 120px;
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+#nav-contact-section > .popup_1 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+/* Popup container */
 main > article > .article-title-section > .popup {
   position: relative;
   display: inline-flex;
@@ -136,7 +255,7 @@ main > article > .article-title-section > .popup > .popuptext {
   border-radius: 6px;
   padding: 8px 8px;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   bottom: 150%;
   right: -20%;
   margin-left: -80px;
@@ -329,6 +448,53 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     flex-basis: calc(5*100%/16);
   }
 
+  /* Popup container */
+  #nav-contact-section > .popup_1 {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+  }
+
+  /* The actual popup (appears on top) */
+  #nav-contact-section > .popup_1 > .popuptext {
+    visibility: hidden;
+    width: 446px;
+    height: 136px;
+    background-color: #394670;
+    color: #fff;
+    text-align: -webkit-left;
+    border-radius: 6px;
+    padding: 8px 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: -780%;
+    right: -100%;
+    margin-left: -80px;
+  }
+
+  #nav-contact-section > .popup_1 > .popuptext > iframe{
+    width: 430px;
+    height: 120px;
+  }
+
+
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  #nav-contact-section > .popup_1 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
 
   #nav-logo-section {
     flex-basis: calc(11*100%/16);
@@ -353,7 +519,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     border-radius: 6px;
     padding: 8px 8px;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     bottom: 150%;
     right: -20%;
     margin-left: -80px;
@@ -394,13 +560,83 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     to {opacity:1 ;}
   }
 
+  #slider1 {
+    flex-grow: 1;
+    position: absolute;
+    width: 100%;
+    height: calc(100% * (6/9));
+    bottom: 100%;
+    z-index: 1;
+    background: #060b19;
+    transition: bottom 1s;
+  }
+  #slider1.in {
+    bottom:calc(100% * (3/9));
+  }
+
+  #slider2 {
+    flex-grow: 1;
+    position: absolute;
+    width: 100%;
+    height: calc(100% * (6/9));
+    bottom: 100%;
+    z-index: 1;
+    background: #060b19;
+    transition: bottom 1s;
+  }
+  #slider2.in {
+    bottom:calc(100% * (3/9));
+  }
+
+  #slider3 {
+    flex-grow: 1;
+    position: absolute;
+    width: 100%;
+    height: calc(100% * (6/9));
+    bottom: 100%;
+    z-index: 1;
+    background: #060b19;
+    transition: bottom 1s;
+  }
+  #slider3.in {
+    bottom:calc(100% * (1/9));
+  }
+
+  #slider4 {
+    flex-grow: 1;
+    position: absolute;
+    width: 100%;
+    height: calc(100% * (6/9));
+    bottom: 100%;
+    z-index: 1;
+    background: #060b19;
+    transition: bottom 1s;
+  }
+  #slider4.in {
+    bottom:calc(100% * (3/9));
+  }
+
+  #slider5 {
+    flex-grow: 1;
+    position: absolute;
+    width: 100%;
+    height: calc(100% * (6/9));
+    bottom: 100%;
+    z-index: 1;
+    background: #060b19;
+    transition: bottom 1s;
+  }
+  #slider5.in {
+    bottom:calc(100% * (3/9));
+  }
+
   main {
     overflow-y: auto;
   }
   
   main > article {
     grid-template-columns: none;
-    grid-template-rows: 3fr repeat(3, 0.25fr);
+    grid-template-rows: 3fr 0.25fr 1fr 0.25fr;
     height: 100%;
   }
    
@@ -433,8 +669,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     justify-content: center;
     order: 3;
     padding: 0.5rem;
-    overflow: visible;
-    justify-content: start;
+    overflow: auto;
 
   }
   main > article > .article-title-section > h2 {
@@ -486,7 +721,55 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
   #nav-logo-section >  a {
     font-size: 1.5rem;
   }
-  
+
+  /* Popup container */
+  #nav-contact-section > .popup_1 {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+  }
+
+  /* The actual popup (appears on top) */
+  #nav-contact-section > .popup_1 > .popuptext {
+    visibility: hidden;
+    width: 446px;
+    height: 136px;
+    background-color: #394670;
+    color: #fff;
+    text-align: -webkit-left;
+    border-radius: 6px;
+    padding: 8px 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: -680%;
+    right: -180%;
+    margin-left: -80px;
+  }
+
+  #nav-contact-section > .popup_1 > .popuptext > iframe{
+    width: 430px;
+    height: 120px;
+  }
+
+
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  #nav-contact-section > .popup_1 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
   #nav-mobile-section {
     background-color: var(--background-color);
     flex-direction: column;

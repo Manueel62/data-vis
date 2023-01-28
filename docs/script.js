@@ -1,5 +1,6 @@
 /* -- Carousel Navigation -- */
 
+
 let activeIndex = 0;
 
 const slides = document.getElementsByTagName("article");
@@ -52,6 +53,32 @@ window.matchMedia("(max-width: 800px)").onchange = e => {
   nav.dataset.toggled = "false";
 };
 
+const app = document.getElementById('protocol-toggle-button');
+
+const change_app_text = (text) => app.innerText = text;
+
+var pl = true;
+$('#protocol-toggle-button').click(function(){
+  if(pl) {
+    pl = false;
+    $('#slider1').addClass('in');
+    $('#slider2').addClass('in');
+    $('#slider3').addClass('in');
+    $('#slider4').addClass('in');
+    $('#slider5').addClass('in');
+    change_app_text('CLOSE INFO');
+  }else{
+    pl = true;
+    $('#slider1').removeClass('in');
+    $('#slider2').removeClass('in');
+    $('#slider3').removeClass('in');
+    $('#slider4').removeClass('in');
+    $('#slider5').removeClass('in');
+    change_app_text('PROTOCOL INFO');
+  }
+});
+
+
 
 const myFunction1=()=> {
   var popup = document.getElementById("myPopup1");
@@ -75,5 +102,10 @@ const myFunction4=()=> {
 
 const myFunction5=()=> {
   var popup = document.getElementById("myPopup5");
+  popup.classList.toggle("show")
+}
+
+const myFunction6=()=> {
+  var popup = document.getElementById("myPopup6");
   popup.classList.toggle("show")
 }
