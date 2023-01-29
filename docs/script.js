@@ -67,6 +67,7 @@ $('#protocol-toggle-button').click(function(){
     $('#slider4').addClass('in');
     $('#slider5').addClass('in');
     change_app_text('CLOSE INFO');
+    handleNavToggle();
   }else{
     pl = true;
     $('#slider1').removeClass('in');
@@ -75,6 +76,7 @@ $('#protocol-toggle-button').click(function(){
     $('#slider4').removeClass('in');
     $('#slider5').removeClass('in');
     change_app_text('PROTOCOL INFO');
+    handleNavToggle();
   }
 });
 
