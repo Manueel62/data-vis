@@ -47,7 +47,107 @@
 
 <main>
   <article data-index="0" data-status="active">
-    <div><div id="slider1"> <p>close</p>
+    <div>
+      <div id="slider1">
+        <h1>
+          The visualization protocol consists of the following:
+        </h1>
+        <h3>
+          1. Timespan:
+        </h3>
+        <p>
+          The data used was collected during the year 2018. We need to keep into
+          account the fact that with the recent COVID-19 pandemic it may be
+          possible that this data does not reflect anymore the current situation.
+        </p>
+        <h3>
+          2. Data source:
+        </h3>
+        <p>
+          The data was collected from the United States Department of
+          Transportation, more precisely on the Bureau of Transportation
+          Statistics section, it can be found at this link:
+          <a href="https://www.transtats.bts.gov/Homepage.asp">
+            Bureau of Transportation Statistics
+          </a>
+        </p>
+        <h3>
+          3. Link to the dataset used:
+        </h3>
+        <p>
+          The specific dataset was gathered from a Kaggle page containing a
+          collection of Air Traffic Data with a span from 2009 to 2018, it can be
+          found here:
+          <a
+                  href="https://www.kaggle.com/datasets/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018"
+          >
+            Airline Delay and Cancellation Data, 2009 - 2018
+          </a>
+        </p>
+        <h3>
+          4. Metadata of the dataset:
+        </h3>
+        <p>
+          FL_DATE (date of the flight),
+        <br>
+          OP_CARRIER (name of the carrier operator),
+        <br>
+          OP_CARRIER_FL_NUM (flight number of the carrier operator),
+        <br>
+          ORIGIN (origin airport IATA code),
+        <br>
+          DEST (destination airport IATA code),
+        <br>
+          DEP_TIME (time of departure),
+        <br>
+          DEP_DELAY (departure delay),
+        <br>
+          TAXI_OUT (time spent on the runway),
+        <br>
+          WHEELS_OFF (time when wheels are of the ground),
+        <br>
+          WHEELS_ON (time when wheels touch the ground),
+        <br>
+          TAXI_IN (time spent on the arrival runway),
+        <br>
+          ARR_TIME (time of arrival at the gate),
+        <br>
+          ARR_DELAY (delay on arrival),
+        <br>
+          CANCELLED (true or false),
+        <br>
+          CANCELLATION_CODE (determines the cancellation reason),
+        <br>
+          DIVERTED (true or false),
+        <br>
+          ACTUAL_ELAPSED_TIME (total time elapsed),
+        <br>
+          AIR_TIME (time in the air),
+        <br>
+          DISTANCE (In kilometres),
+        <br>
+          DELAY_REASON (carrier_delay, weather_delay, nas_delay, security_delay,
+          late_aircraft_delay).
+        </p>
+      <h3>
+        5. Short abstract of the data visualization process:
+      </h3>
+      <p>
+        The dataset was processed using python, it didn’t require any
+        pre-processing and alongside the Airports Dataset containing IATA code and
+        coordinates available on the Bureau of Transportation Statistics site, for
+        each of the visualizations we saved a new file containing only the
+        necessary columns for the specific use case.
+      </p>
+      <h3>
+        6. Actions performed to obtain the visualization:
+      </h3>
+      <p>
+        An ordered list of all the actions performed and parameters and scripts
+        used to transform the raw data into the final visualization is available in
+        the <a onclick="myFunction1()">MAP PROTOCOL</a> section of each map/plot.
+      </p>
+
     </div><iframe id="map1" width="100%" height="100%" src="https://flowmap.blue/1J5Bl7YuviuNLWQtyOQu5954GtZ2OwsiOj7a1jsycCTQ/embed?v=50.408823%2C-101.319676%2C2.42%2C0%2C0&a=1&as=1&b=1&bo=52&c=1&ca=1&cz=5&d=1&fe=1&lt=1&lfm=ALL&col=Plasma&f=51" allowfullscreen></iframe></div>
     <div class="article-description-section article-section">
       <p>The visualization shown in the Flight Routes Map represents the amount of airline traffic with respect to each air route in the USA.<br><br><br>
@@ -76,7 +176,106 @@
     </div>
   </article>
   <article data-index="1" data-status="inactive">    
-    <div><div id="slider2"> <p>close</p>
+    <div><div id="slider2">
+      <h1>
+        The visualization protocol consists of the following:
+      </h1>
+      <h3>
+        1. Timespan:
+      </h3>
+      <p>
+        The data used was collected during the year 2018. We need to keep into
+        account the fact that with the recent COVID-19 pandemic it may be
+        possible that this data does not reflect anymore the current situation.
+      </p>
+      <h3>
+        2. Data source:
+      </h3>
+      <p>
+        The data was collected from the United States Department of
+        Transportation, more precisely on the Bureau of Transportation
+        Statistics section, it can be found at this link:
+        <a href="https://www.transtats.bts.gov/Homepage.asp">
+          Bureau of Transportation Statistics
+        </a>
+      </p>
+      <h3>
+        3. Link to the dataset used:
+      </h3>
+      <p>
+        The specific dataset was gathered from a Kaggle page containing a
+        collection of Air Traffic Data with a span from 2009 to 2018, it can be
+        found here:
+        <a
+                href="https://www.kaggle.com/datasets/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018"
+        >
+          Airline Delay and Cancellation Data, 2009 - 2018
+        </a>
+      </p>
+      <h3>
+        4. Metadata of the dataset:
+      </h3>
+      <p>
+        FL_DATE (date of the flight),
+        <br>
+        OP_CARRIER (name of the carrier operator),
+        <br>
+        OP_CARRIER_FL_NUM (flight number of the carrier operator),
+        <br>
+        ORIGIN (origin airport IATA code),
+        <br>
+        DEST (destination airport IATA code),
+        <br>
+        DEP_TIME (time of departure),
+        <br>
+        DEP_DELAY (departure delay),
+        <br>
+        TAXI_OUT (time spent on the runway),
+        <br>
+        WHEELS_OFF (time when wheels are of the ground),
+        <br>
+        WHEELS_ON (time when wheels touch the ground),
+        <br>
+        TAXI_IN (time spent on the arrival runway),
+        <br>
+        ARR_TIME (time of arrival at the gate),
+        <br>
+        ARR_DELAY (delay on arrival),
+        <br>
+        CANCELLED (true or false),
+        <br>
+        CANCELLATION_CODE (determines the cancellation reason),
+        <br>
+        DIVERTED (true or false),
+        <br>
+        ACTUAL_ELAPSED_TIME (total time elapsed),
+        <br>
+        AIR_TIME (time in the air),
+        <br>
+        DISTANCE (In kilometres),
+        <br>
+        DELAY_REASON (carrier_delay, weather_delay, nas_delay, security_delay,
+        late_aircraft_delay).
+      </p>
+      <h3>
+        5. Short abstract of the data visualization process:
+      </h3>
+      <p>
+        The dataset was processed using python, it didn’t require any
+        pre-processing and alongside the Airports Dataset containing IATA code and
+        coordinates available on the Bureau of Transportation Statistics site, for
+        each of the visualizations we saved a new file containing only the
+        necessary columns for the specific use case.
+      </p>
+      <h3>
+        6. Actions performed to obtain the visualization:
+      </h3>
+      <p>
+        An ordered list of all the actions performed and parameters and scripts
+        used to transform the raw data into the final visualization is available in
+        the <a onclick="myFunction2()">MAP PROTOCOL</a> section of each map/plot.
+      </p>
+
     </div><iframe src='https://flo.uri.sh/visualisation/11995515/embed' title='Interactive or visual content' id="map2" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
     <div class="article-description-section article-section">
       <p>The visualization shown in the Routes Delay Map represents the airline routes divided by airport as the first one, and their respective delay. <br><br><br>        <a style="font-size: large ; color: rgba(255, 255, 255, 0.5)">Its features and visual variables are:</a><br><br>
@@ -103,8 +302,107 @@
     </div>
   </article>
   <article data-index="2" data-status="inactive">
-    <div><div id="slider3"> <p>close</p>
-    </div> <iframe src='https://flo.uri.sh/visualisation/12570416/embed' title='Interactive or visual content' id="map3" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
+    <div><div id="slider3">
+      <h1>
+        The visualization protocol consists of the following:
+      </h1>
+      <h3>
+        1. Timespan:
+      </h3>
+      <p>
+        The data used was collected during the year 2018. We need to keep into
+        account the fact that with the recent COVID-19 pandemic it may be
+        possible that this data does not reflect anymore the current situation.
+      </p>
+      <h3>
+        2. Data source:
+      </h3>
+      <p>
+        The data was collected from the United States Department of
+        Transportation, more precisely on the Bureau of Transportation
+        Statistics section, it can be found at this link:
+        <a href="https://www.transtats.bts.gov/Homepage.asp">
+          Bureau of Transportation Statistics
+        </a>
+      </p>
+      <h3>
+        3. Link to the dataset used:
+      </h3>
+      <p>
+        The specific dataset was gathered from a Kaggle page containing a
+        collection of Air Traffic Data with a span from 2009 to 2018, it can be
+        found here:
+        <a
+                href="https://www.kaggle.com/datasets/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018"
+        >
+          Airline Delay and Cancellation Data, 2009 - 2018
+        </a>
+      </p>
+      <h3>
+        4. Metadata of the dataset:
+      </h3>
+      <p>
+        FL_DATE (date of the flight),
+        <br>
+        OP_CARRIER (name of the carrier operator),
+        <br>
+        OP_CARRIER_FL_NUM (flight number of the carrier operator),
+        <br>
+        ORIGIN (origin airport IATA code),
+        <br>
+        DEST (destination airport IATA code),
+        <br>
+        DEP_TIME (time of departure),
+        <br>
+        DEP_DELAY (departure delay),
+        <br>
+        TAXI_OUT (time spent on the runway),
+        <br>
+        WHEELS_OFF (time when wheels are of the ground),
+        <br>
+        WHEELS_ON (time when wheels touch the ground),
+        <br>
+        TAXI_IN (time spent on the arrival runway),
+        <br>
+        ARR_TIME (time of arrival at the gate),
+        <br>
+        ARR_DELAY (delay on arrival),
+        <br>
+        CANCELLED (true or false),
+        <br>
+        CANCELLATION_CODE (determines the cancellation reason),
+        <br>
+        DIVERTED (true or false),
+        <br>
+        ACTUAL_ELAPSED_TIME (total time elapsed),
+        <br>
+        AIR_TIME (time in the air),
+        <br>
+        DISTANCE (In kilometres),
+        <br>
+        DELAY_REASON (carrier_delay, weather_delay, nas_delay, security_delay,
+        late_aircraft_delay).
+      </p>
+      <h3>
+        5. Short abstract of the data visualization process:
+      </h3>
+      <p>
+        The dataset was processed using python, it didn’t require any
+        pre-processing and alongside the Airports Dataset containing IATA code and
+        coordinates available on the Bureau of Transportation Statistics site, for
+        each of the visualizations we saved a new file containing only the
+        necessary columns for the specific use case.
+      </p>
+      <h3>
+        6. Actions performed to obtain the visualization:
+      </h3>
+      <p>
+        An ordered list of all the actions performed and parameters and scripts
+        used to transform the raw data into the final visualization is available in
+        the <a onclick="myFunction3()">MAP PROTOCOL</a> section of each map/plot.
+      </p>
+
+    </div><iframe src='https://flo.uri.sh/visualisation/12570416/embed' title='Interactive or visual content' id="map3" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
     <div class="article-description-section article-section">
       <p>The visualization shown in the Delay Insight Map represents the airline routes filtered by delay average.<br><br><br>
         <a style="font-size: large ; color: rgba(255, 255, 255, 0.5)">Its features and visual variables are:</a><br><br>
@@ -133,8 +431,107 @@
     </div>
   </article>
   <article data-index="3" data-status="inactive">
-    <div><div id="slider4"> <p>close</p>
-    </div> <iframe src='https://flo.uri.sh/visualisation/12568654/embed' title='Interactive or visual content' id="map4" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
+    <div><div id="slider4">
+      <h1>
+        The visualization protocol consists of the following:
+      </h1>
+      <h3>
+        1. Timespan:
+      </h3>
+      <p>
+        The data used was collected during the year 2018. We need to keep into
+        account the fact that with the recent COVID-19 pandemic it may be
+        possible that this data does not reflect anymore the current situation.
+      </p>
+      <h3>
+        2. Data source:
+      </h3>
+      <p>
+        The data was collected from the United States Department of
+        Transportation, more precisely on the Bureau of Transportation
+        Statistics section, it can be found at this link:
+        <a href="https://www.transtats.bts.gov/Homepage.asp">
+          Bureau of Transportation Statistics
+        </a>
+      </p>
+      <h3>
+        3. Link to the dataset used:
+      </h3>
+      <p>
+        The specific dataset was gathered from a Kaggle page containing a
+        collection of Air Traffic Data with a span from 2009 to 2018, it can be
+        found here:
+        <a
+                href="https://www.kaggle.com/datasets/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018"
+        >
+          Airline Delay and Cancellation Data, 2009 - 2018
+        </a>
+      </p>
+      <h3>
+        4. Metadata of the dataset:
+      </h3>
+      <p>
+        FL_DATE (date of the flight),
+        <br>
+        OP_CARRIER (name of the carrier operator),
+        <br>
+        OP_CARRIER_FL_NUM (flight number of the carrier operator),
+        <br>
+        ORIGIN (origin airport IATA code),
+        <br>
+        DEST (destination airport IATA code),
+        <br>
+        DEP_TIME (time of departure),
+        <br>
+        DEP_DELAY (departure delay),
+        <br>
+        TAXI_OUT (time spent on the runway),
+        <br>
+        WHEELS_OFF (time when wheels are of the ground),
+        <br>
+        WHEELS_ON (time when wheels touch the ground),
+        <br>
+        TAXI_IN (time spent on the arrival runway),
+        <br>
+        ARR_TIME (time of arrival at the gate),
+        <br>
+        ARR_DELAY (delay on arrival),
+        <br>
+        CANCELLED (true or false),
+        <br>
+        CANCELLATION_CODE (determines the cancellation reason),
+        <br>
+        DIVERTED (true or false),
+        <br>
+        ACTUAL_ELAPSED_TIME (total time elapsed),
+        <br>
+        AIR_TIME (time in the air),
+        <br>
+        DISTANCE (In kilometres),
+        <br>
+        DELAY_REASON (carrier_delay, weather_delay, nas_delay, security_delay,
+        late_aircraft_delay).
+      </p>
+      <h3>
+        5. Short abstract of the data visualization process:
+      </h3>
+      <p>
+        The dataset was processed using python, it didn’t require any
+        pre-processing and alongside the Airports Dataset containing IATA code and
+        coordinates available on the Bureau of Transportation Statistics site, for
+        each of the visualizations we saved a new file containing only the
+        necessary columns for the specific use case.
+      </p>
+      <h3>
+        6. Actions performed to obtain the visualization:
+      </h3>
+      <p>
+        An ordered list of all the actions performed and parameters and scripts
+        used to transform the raw data into the final visualization is available in
+        the <a onclick="myFunction4()">MAP PROTOCOL</a> section of each map/plot.
+      </p>
+
+    </div><iframe src='https://flo.uri.sh/visualisation/12568654/embed' title='Interactive or visual content' id="map4" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
     <div class="article-description-section article-section">
       <p>The visualization shown in the User Ratings Map represents the ratings given by users at a specific airport.<br><br><br>
         <a style="font-size: large ; color: rgba(255, 255, 255, 0.5)">Its features and visual variables are:</a><br><br>
@@ -163,8 +560,107 @@
     </div>
   </article>
   <article data-index="4" data-status="inactive">
-    <div><div id="slider5"> <p>close</p>
-    </div> <iframe src='https://flo.uri.sh/visualisation/12571370/embed' title='Interactive or visual content' id="map5" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
+    <div><div id="slider5">
+      <h1>
+        The visualization protocol consists of the following:
+      </h1>
+      <h3>
+        1. Timespan:
+      </h3>
+      <p>
+        The data used was collected during the year 2018. We need to keep into
+        account the fact that with the recent COVID-19 pandemic it may be
+        possible that this data does not reflect anymore the current situation.
+      </p>
+      <h3>
+        2. Data source:
+      </h3>
+      <p>
+        The data was collected from the United States Department of
+        Transportation, more precisely on the Bureau of Transportation
+        Statistics section, it can be found at this link:
+        <a href="https://www.transtats.bts.gov/Homepage.asp">
+          Bureau of Transportation Statistics
+        </a>
+      </p>
+      <h3>
+        3. Link to the dataset used:
+      </h3>
+      <p>
+        The specific dataset was gathered from a Kaggle page containing a
+        collection of Air Traffic Data with a span from 2009 to 2018, it can be
+        found here:
+        <a
+                href="https://www.kaggle.com/datasets/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018"
+        >
+          Airline Delay and Cancellation Data, 2009 - 2018
+        </a>
+      </p>
+      <h3>
+        4. Metadata of the dataset:
+      </h3>
+      <p>
+        FL_DATE (date of the flight),
+        <br>
+        OP_CARRIER (name of the carrier operator),
+        <br>
+        OP_CARRIER_FL_NUM (flight number of the carrier operator),
+        <br>
+        ORIGIN (origin airport IATA code),
+        <br>
+        DEST (destination airport IATA code),
+        <br>
+        DEP_TIME (time of departure),
+        <br>
+        DEP_DELAY (departure delay),
+        <br>
+        TAXI_OUT (time spent on the runway),
+        <br>
+        WHEELS_OFF (time when wheels are of the ground),
+        <br>
+        WHEELS_ON (time when wheels touch the ground),
+        <br>
+        TAXI_IN (time spent on the arrival runway),
+        <br>
+        ARR_TIME (time of arrival at the gate),
+        <br>
+        ARR_DELAY (delay on arrival),
+        <br>
+        CANCELLED (true or false),
+        <br>
+        CANCELLATION_CODE (determines the cancellation reason),
+        <br>
+        DIVERTED (true or false),
+        <br>
+        ACTUAL_ELAPSED_TIME (total time elapsed),
+        <br>
+        AIR_TIME (time in the air),
+        <br>
+        DISTANCE (In kilometres),
+        <br>
+        DELAY_REASON (carrier_delay, weather_delay, nas_delay, security_delay,
+        late_aircraft_delay).
+      </p>
+      <h3>
+        5. Short abstract of the data visualization process:
+      </h3>
+      <p>
+        The dataset was processed using python, it didn’t require any
+        pre-processing and alongside the Airports Dataset containing IATA code and
+        coordinates available on the Bureau of Transportation Statistics site, for
+        each of the visualizations we saved a new file containing only the
+        necessary columns for the specific use case.
+      </p>
+      <h3>
+        6. Actions performed to obtain the visualization:
+      </h3>
+      <p>
+        An ordered list of all the actions performed and parameters and scripts
+        used to transform the raw data into the final visualization is available in
+        the <a onclick="myFunction5()">MAP PROTOCOL</a> section of each map/plot.
+      </p>
+
+    </div><iframe src='https://flo.uri.sh/visualisation/12571370/embed' title='Interactive or visual content' id="map5" allow="fullscreen" class='flourish-embed-iframe' style='width:100%;height:100%;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe></div>
     <div class="article-description-section article-section">
       <p>The visualization shown in this Correlation Scatter Plot represents the ratings given by users at a specific airport and the respective Average Airport delay<br><br><br>
         <a style="font-size: large ; color: rgba(255, 255, 255, 0.5)">Its features and visual variables are:</a><br><br>

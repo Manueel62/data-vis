@@ -58,7 +58,45 @@ nav .nav-section {
   z-index: 1;
   background: #060b19;
   transition: bottom 1s;
+
+  margin-top: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem;
 }
+
+#slider1 > p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+#slider1 > p > a{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+#slider1 > p > a:hover{
+  text-decoration: underline;
+  color: var(--highlight-color);
+}
+
+#slider1 > h3{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+#slider1 > h1{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
 #slider1.in {
   bottom:calc(100% * (1/9));
 }
@@ -72,7 +110,45 @@ nav .nav-section {
   z-index: 1;
   background: #060b19;
   transition: bottom 1s;
+
+  margin-top: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem;
 }
+
+#slider2 > p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+#slider2 > p > a{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+#slider2 > p > a:hover{
+  text-decoration: underline;
+  color: var(--highlight-color);
+}
+
+#slider2 > h3{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+#slider2 > h1{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
 #slider2.in {
   bottom:calc(100% * (1/9));
 }
@@ -86,7 +162,45 @@ nav .nav-section {
   z-index: 1;
   background: #060b19;
   transition: bottom 1s;
+
+  margin-top: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem;
 }
+
+#slider3 > p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+#slider3 > p > a{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+#slider3 > p > a:hover{
+  text-decoration: underline;
+  color: var(--highlight-color);
+}
+
+#slider3 > h3{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+#slider3 > h1{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
 #slider3.in {
   bottom:calc(100% * (1/9));
 }
@@ -100,7 +214,46 @@ nav .nav-section {
   z-index: 1;
   background: #060b19;
   transition: bottom 1s;
+
+  margin-top: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem;
+
 }
+
+#slider4 > p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+#slider4 > p > a{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+#slider4 > p > a:hover{
+  text-decoration: underline;
+  color: var(--highlight-color);
+}
+
+#slider4 > h3{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+#slider4 > h1{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
 #slider4.in {
   bottom:calc(100% * (1/9));
 }
@@ -114,7 +267,45 @@ nav .nav-section {
   z-index: 1;
   background: #060b19;
   transition: bottom 1s;
+
+  margin-top: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem;
 }
+
+#slider5 > p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+#slider5 > p > a{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+#slider5 > p > a:hover{
+  text-decoration: underline;
+  color: var(--highlight-color);
+}
+
+#slider5 > h3{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+#slider5 > h1{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
 #slider5.in {
   bottom:calc(100% * (1/9));
 }
