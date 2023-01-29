@@ -776,7 +776,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     transition: bottom 1s;
   }
   #slider3.in {
-    bottom:calc(100% * (1/9));
+    bottom:calc(100% * (3/9));
   }
 
   #slider4 {
